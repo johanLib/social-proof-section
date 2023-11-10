@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 15px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-size: inherit;
+  background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  background-size: 36rem, 53rem;
+  font-family: 'League Spartan', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  height: 38rem;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.article {
+  width: 50%;
+  padding-right: 3rem;
+    height: 19rem;
+}
+
+.article h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--Very-Dark-Magenta);
+  letter-spacing: -0.1rem;
+}
+
+.article p {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 1.1rem;
+}
+
+.rating {
+  width: 50%;
+  display: grid;
+  align-content: start;
+  gap: 1.1rem;
+}
+
+.reviews-flex {
+  width: 25rem;
+  height: 3.2rem;
+  margin-top: 2.3rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: -2px 5px 5px rgba(0,0,0,0.1);
+}
+
+.reviews-flex figure {
+  margin-left: 2rem;
+}
+
+.reviews-flex p {
+  margin-left: 2rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+.report-guru-flex {
+  width: 25rem;
+  height: 3.2rem;
+  margin-left: 3rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: -2px 5px 5px rgba(0,0,0,0.1);
+}
+
+.report-guru-flex figure {
+  margin-left: 2rem;
+}
+
+.report-guru-flex p {
+  margin-left: 2rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+.bestTech-flex {
+  width: 25rem;
+  height: 3.2rem;
+  margin-left: 6rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: -2px 5px 5px rgba(0,0,0,0.1);
+}
+
+.bestTech-flex figure {
+  margin-left: 2rem;
+}
+
+.bestTech-flex p {
+  margin-left: 2rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+.feedbacks {
+  width: 100%;
+  height: 15.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 0.5rem;
+}
+
+.feedbacks .colton {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 14rem;
+  padding: 2rem 2rem;
+}
+
+.feedbacks .irene {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 14rem;
+  padding: 2rem 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.feedbacks .anne {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 14rem;
+  padding: 2rem 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.avatar-photo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container div {
+  margin-left: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+.flex-container div h4 {
+  color: var(--White);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.flex-container div p {
+  color: var(--Soft-Pink);
+}
+
+.colton > p, .irene > p, .anne > p  {
+  color: var(--Light-Grayish-Magenta);
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 650px) {
+
+  .card {
+    width: 90%;
+    height: auto;
+    max-width: 550px;
+  }
+
+  .article {
+    width: 100%;
+    background-color: red;
+    padding: 0;
+    text-align: center;
+    height: 15rem;
+  }
+
+  .article h1 {
+    font-size: 3rem;
+  }
+
+  .rating {
+    width: 100%;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .reviews-flex {
+    width: 98%;
+    height: 4rem;
+    flex-direction: column;
+  }
+
+  .report-guru-flex {
+    width: 98%;
+    flex-direction: column;
+  }
+
+  .bestTech-flex {
+    flex-direction: column;
+  }
+
+  .feedbacks {
+    width: 100%;
+    background-color: blue;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .feedbacks .colton {
+    width: 100%;
+    margin: auto;
+  }
+
+  .feedbacks .irene {
+    width: 100%;
+    margin: auto;
+  }
+
+  .feedbacks .anne {
+    width: 100%;
+    margin: auto;
+  }
+}
